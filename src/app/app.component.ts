@@ -12,6 +12,8 @@ export class AppComponent {
   @Input()
   getList = false
 
+  listTitle = 'List'
+
   onClick() {
     if (this.getList == false) {
       this.getList = true
@@ -20,6 +22,5 @@ export class AppComponent {
       this.getList = false
       this.button = 'Button'
     }
-
   }
 }
