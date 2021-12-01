@@ -1,0 +1,6 @@
+<div class="container">
+  <button (click)="removeItem()" class="btn">Remove item</button>
+  <ul *ngFor="let item of data" class="list">
+    <app-list-item [firstname]="item.firstName" [lastname]="item.lastName" [age]="item.age"></app-list-item>
+  </ul>
+</div>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,20 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-project';
-  button = 'Button'
-
-  @Input()
-  getList = false
-
-  listTitle = 'List'
-
-  onClick() {
-    if (this.getList == false) {
-      this.getList = true
-      this.button = 'Button pressed!'
-    } else {
-      this.getList = false
-      this.button = 'Button'
-    }
-  }
 }
